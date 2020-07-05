@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 export async function FetchPlates(){
-    const promise = await axios.get('http://localhost:5000/api/get_plates');
+    const promise = await axios.get('/api/get_plates');
     const status = promise.status;
     var response = {};
     if(status === 200)
@@ -14,7 +14,7 @@ export async function FetchPlates(){
 
 
 export async function DelPlate(plate_id){
-    const promise = await axios.delete(`http://localhost:5000/api/delete_plate/${plate_id}`);
+    const promise = await axios.delete(`/api/delete_plate/${plate_id}`);
     const status = promise.status;
     if(status === 200)
         return true
@@ -23,7 +23,7 @@ export async function DelPlate(plate_id){
 }
 
 export async function AddPlate(plate){
-    const promise = await axios.post('http://localhost:5000/api/add_plate/', {info: plate});
+    const promise = await axios.post('/api/add_plate/', {info: plate});
     const status = promise.status;
     var response = {};
     if(status === 200)
@@ -35,7 +35,7 @@ export async function AddPlate(plate){
 
 
 export async function EditPlate(plate){
-    const promise = await axios.post('http://localhost:5000/api/edit_plate/', {info: plate});
+    const promise = await axios.post('/api/edit_plate/', {info: plate});
     const status = promise.status;
     var response = {};
     if(status === 200)
