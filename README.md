@@ -11,10 +11,13 @@
 ### Launching application in local enviroment:
 <br /><br />
 
-#### `git clone https://github.com/AugustinasKaz/danske1`
+#### `git clone https://github.com/AugustinasKaz/danske2`
 <br /><br />
 
-#### `cd ./danske1`
+#### `cd ./danske2 && npm install`
 <br /><br />
 
-#### `npm run dev` - will launch node server on port 5000 
+#### `cd ./danske2/react_app && npm install`
+<br /><br />
+
+#### `cd ./danske2 && npm run dev` - will launch node server on port 5000 
