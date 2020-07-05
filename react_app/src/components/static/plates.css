@@ -1,0 +1,13 @@
+.li-item{
+    width:90%;
+    padding:5px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: rgb(110, 219, 223);
+}
+
+.li-item-btn{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}

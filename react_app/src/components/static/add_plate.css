@@ -1,0 +1,23 @@
+.wrapper{
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+}
+.wrapper div{
+    width: 100%;
+}
+.box1-1{
+    width: 100%;
+    float:left; 
+    height:150px;
+}
+
+.box2-2{
+    float:left; 
+    clear: left;
+    height:200px;
+}
+
+
