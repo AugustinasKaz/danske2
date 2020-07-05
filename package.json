@@ -8,7 +8,7 @@
     "server": "nodemon index.js",
     "react_app": "npm start --prefix react_app",
     "dev": "concurrently \"npm run server\" \"npm run react_app\"",
-    "heroku-postbuild": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "cd react_app && npm install && npm run build"
   },
   "repository": {
     "type": "git",

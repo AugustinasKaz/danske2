@@ -87,6 +87,9 @@ app.post('/api/edit_plate/', (req, res) => {
     });
 })
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/react_app/build/index.html'));
+});
 
 
 
