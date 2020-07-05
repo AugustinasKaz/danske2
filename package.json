@@ -27,6 +27,7 @@
     "create-react-app": "^3.4.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
+    "path": "^0.12.7",
     "pg": "^8.2.1",
     "react-router-dom": "^5.2.0"
   }
