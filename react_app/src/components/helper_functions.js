@@ -35,7 +35,7 @@ export async function AddPlate(plate){
 
 
 export async function EditPlate(plate){
-    const promise = await axios.post('', {info: plate});
+    const promise = await axios.post('http://localhost:5000/api/edit_plate/', {info: plate});
     const status = promise.status;
     var response = {};
     if(status === 200)

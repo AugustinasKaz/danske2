@@ -69,6 +69,25 @@ app.post('/api/add_plate/', (req, res) => {
     });
 })
 
+app.post('/api/edit_plate/', (req, res) => {
+    let data = req.body.info
+    const client = new Client({
+        connectionString: DATABASE_URL,
+        ssl: {
+            rejectUnauthorized: false
+        }
+    });
+    client.connect();
+    client.query("UPDATE plates SET owner_name ='"+data.owner_name+"',plate ='"+data.plate+"' WHERE list_id ='"+data.list_id+"';", (err, response) => {
+        if (err)
+            res.json(err);
+        else {
+            res.json(response);
+        }
+    });
+})
+
+
 
 
 app.listen(port, () => console.log(`app listening on port ${port}!`))
