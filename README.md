@@ -2,6 +2,8 @@
 <br /><br />
 @ Plates validtion(According to Regitra rules)
 <br /><br />
+@ Application uses PostgreSQL database(hosted on Heroku)
+<br /><br />
 @ Only unique plates alowed
 <br /><br />
 @ Search function does not work properly
